@@ -1,0 +1,13 @@
+<li> Kalorien: {{ userGoal.kcal }}</li>
+<li> Protein: {{ userGoal.protein }}</li>
+<li> Fett: {{ userGoal.fat }}</li>
+<li> Kohlenhydrate: {{ userGoal.carb }}</li>
+{% if foodList  %}
+    <ul>  {% for food in foodList %}
+		<li>{{ food.foodID }}</li>
+	  {% endfor %}
+    </ul>
+{% else %}
+    <p>Kein Eintrag</p>
+{% endif %}
+
